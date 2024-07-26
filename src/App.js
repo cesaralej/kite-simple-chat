@@ -28,7 +28,10 @@ function App() {
   const [user] = useAuthState(auth);
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <header className="App-header">
+        <h1>KiteChat</h1>
+        <SignOut />
+      </header>
 
       <section>{user ? <ChatRoom /> : <SignIn />}</section>
     </div>
