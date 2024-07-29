@@ -10,13 +10,13 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAAYsFaO8a7YDotRZEl9NS9DtgDRVQjfqY",
-  authDomain: "kitechat-eebcc.firebaseapp.com",
-  projectId: "kitechat-eebcc",
-  storageBucket: "kitechat-eebcc.appspot.com",
-  messagingSenderId: "981171960053",
-  appId: "1:981171960053:web:cb4e5f8d5235a7960e6dbc",
-  measurementId: "G-JSBQ3ZV0VM",
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 
 firebase.initializeApp(firebaseConfig);
